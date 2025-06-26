@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CareerCanvas: Craft professional resumes and track job applications to land your dream job." />
+    <meta name="keywords" content="resume builder, job applications, career tools, CareerCanvas" />
+    <meta name="author" content="CareerCanvas Team" />
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="CareerCanvas | Your Career Companion" />
+    <meta property="og:description" content="Build stunning resumes and manage your job applications with CareerCanvas." />
+    <meta property="og:image" content="/logo.svg" />
+    <meta property="og:url" content="https://careercanvas.com" />
+    <meta property="og:type" content="website" />
+    <!-- Favicon and Preload -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preload" href="/logo.svg" as="image" />
+    <link rel="preload" href="/src/main.jsx" as="script" />
+    <!-- Tailwind CSS CDN for Development -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration for Dark Blue Theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0a1126', // Dark blue for background
+              secondary: '#1e2a44', // Lighter blue for cards
+              tertiary: '#334155', // Borders and dividers
+              accent: '#1d4ed8', // Blue buttons and highlights
+              'accent-hover': '#1e40af', // Darker blue for hover
+              'text-primary': '#f1f5f9', // Light text
+              'text-secondary': '#cbd5e1', // Subtle text
+            },
+          },
+        },
+      };
+    </script>
+    <title>CareerCanvas | Your Career Companion</title>
+  </head>
+  <body class="bg-primary text-text-primary min-h-screen">
+    <div id="root" role="main" aria-label="CareerCanvas Application"></div>
+    <noscript>
+      <div class="flex items-center justify-center min-h-screen bg-primary text-text-primary p-4">
+        <div class="text-center">
+          <h1 class="text-2xl font-bold">JavaScript Required</h1>
+          <p class="mt-2">Please enable JavaScript to use CareerCanvas.</p>
+        </div>
+      </div>
+    </noscript>
+    <!-- Vite Entry Point -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

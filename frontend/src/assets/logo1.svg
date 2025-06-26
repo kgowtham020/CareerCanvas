@@ -1,0 +1,30 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background Canvas Frame -->
+  <rect x="4" y="4" width="28" height="28" rx="4" fill="url(#gradient-accent)" fill-opacity="0.1" />
+  <!-- Stylized 'C' with Brushstroke -->
+  <path
+    d="M12 28C8.68629 28 6 25.3137 6 22C6 18.6863 8.68629 16 12 16C14.2091 16 16.2091 17.7909 16.9453 20H14.0547C13.4186 18.8954 12.2091 18 12 18C9.79086 18 8 19.7909 8 22C8 24.2091 9.79086 26 12 26C12.2091 26 13.4186 25.1046 14.0547 24H16.9453C16.2091 26.2091 14.2091 28 12 28Z"
+    fill="url(#gradient-accent)"
+  />
+  <!-- Brushstroke Accent -->
+  <path
+    d="M16 10C16 8.89543 16.8954 8 18 8H24C25.1046 8 26 8.89543 26 10V12C26 13.1046 25.1046 14 24 14H18C16.8954 14 16 13.1046 16 12V10Z"
+    fill="url(#gradient-accent)"
+    fill-opacity="0.6"
+  />
+  <!-- AI Spark -->
+  <circle cx="28" cy="8" r="3" fill="#38bdf8" fill-opacity="0.8" filter="url(#glow)" />
+</svg>
